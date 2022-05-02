@@ -1,8 +1,8 @@
-From centos:latest
+FROM centos:latest
 MAINTAINER hemantindia500@gmail.com
 RUN yum install -y httpd
 RUN yum install -y zip
-Run yum install -y unzip
+RUN yum install -y unzip
 COPY magazine.zip /var/www/html
 WORKDIR /var/www/html/
 RUN unzip magazine.zip
