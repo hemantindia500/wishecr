@@ -1,5 +1,5 @@
 -hosts: all
-  task:
+  tasks:
       - name: container stop
       shell: docker container stop
       - name: remove container
