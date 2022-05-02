@@ -1,6 +1,6 @@
-From ubuntu:latest
+From centos:latest
 MAINTAINER hemantindia500@gmail.com
-RUN apt-get install -y httpd \
+RUN yum install -y httpd \
 zip \
 unzip
 COPY magazine.zip /var/www/html
