@@ -1,4 +1,10 @@
-- hosts: all
+- hosts: docker-host
   tasks:
+      - name: docker container stop
+        shell: docker container stop webapp
+      - name: deleting the stopped docker container
+        shell: docker container rm webapp
+      - name: deleting docker image which is used to run the above container
+        shell: docker image rm hemantindia500/docker-webapp:latest
       - name: docker container start 
         shell: docker container run -itd --name webapp -p 8000:80 hemantindia500/docker-webapp:latest
