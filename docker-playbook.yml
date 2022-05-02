@@ -1,12 +1,12 @@
 - hosts: all
   tasks:
       - name: container stop
-      shell: docker container stop
+      - shell: docker container stop
       - name: remove container
-      shell: docker container rm webapp
+      - shell: docker container rm webapp
       - name: docker image remove
-      shell: docker image rm webapp
+      - shell: docker image rm webapp
       - name: contaner start
-      shell: docker container start
+      - shell: docker container start
       - name: create and run new container
-      shell: docker container run -itd --name webapp -p 8000:80 hemantindia500/docker-webapp:latest
+      - shell: docker container run -itd --name webapp -p 8000:80 hemantindia500/docker-webapp:latest
