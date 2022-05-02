@@ -1,0 +1,7 @@
+-hosts: docker-host
+  task:
+      shell: docker container stop
+      shell: docker container rm magazine
+      shell: docker image rm magazine
+      shell: docker container start
+      shell: docker container run -itd --name magazine -p 8000:80 hemantindia500/job-magazine:latest
