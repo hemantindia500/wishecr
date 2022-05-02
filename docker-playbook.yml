@@ -1,4 +1,4 @@
-- hosts: docker-host
+- hosts: all
   tasks:
       - name: docker container stop
         shell: docker container stop webapp
