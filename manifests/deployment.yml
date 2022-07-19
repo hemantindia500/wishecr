@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: hemantindiawebmagazineproject 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hemantindiawebmagazineproject
+  template:
+    metadata:
+      labels:
+        app: hemantindiawebmagazineproject 
+    spec:
+      containers:
+        - name: hemantindiawebmagazineproject 
+          image: hemahubacr.azurecr.io/hemantindiawebmagazineproject
+          ports:
+          - containerPort: 80
