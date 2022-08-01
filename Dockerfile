@@ -5,7 +5,6 @@ RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|
 MAINTAINER hemantindia500@gmail.com
 RUN yum install -y httpd
 RUN yum install -y zip
-RUN yum install -y zip
 RUN yum install -y unzip
 COPY magazine.zip /var/www/html
 WORKDIR /var/www/html/
