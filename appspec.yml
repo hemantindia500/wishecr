@@ -1,5 +1,9 @@
 version: 0.0
 os: linux
+files:
+  - source: /
+    destination: /var/www/html/
+    
 hooks:
     BeforeBlockTraffic:
         - location: before_block_traffic.sh
