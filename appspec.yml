@@ -2,20 +2,20 @@ version: 0.0
 os: linux
 hooks:
     BeforeBlockTraffic:
-        - location: scripts/before_block_traffic.sh
+        - location: before_block_traffic.sh
     AfterBlockTraffic:
-        - location: scripts/after_block_traffic.sh
+        - location: after_block_traffic.sh
     ApplicationStop:
-        - location: scripts/application_stop.sh
+        - location: application_stop.sh
     BeforeInstall:
-        - location: scripts/before_install.sh
+        - location: before_install.sh
     AfterInstall:
-        - location: scripts/after_install.sh
+        - location: after_install.sh
     ApplicationStart:
-        - location: scripts/application_start.sh
+        - location: application_start.sh
     ValidateService:
-        - location: scripts/validate_service.sh
+        - location: validate_service.sh
     BeforeAllowTraffic:
-        - location: scripts/before_allow_traffic.sh
+        - location: before_allow_traffic.sh
     AfterAllowTraffic:
-        - location: scripts/after_allow_traffic.sh
+        - location: after_allow_traffic.sh
